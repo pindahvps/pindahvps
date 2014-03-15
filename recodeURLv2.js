@@ -2,7 +2,7 @@ function url_changer(shorterurl) {
   var dloadbutton = document.getElementById('dloadbutton');
                         dloadbutton.href=shorterurl;
 var dloadimage = document.getElementById('dloadimage');
-                        dloadimage.src="https://googledrive.com/host/0B_bIKABE3gBYM0NxSmhqUHRXOVU/";
+                        dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3WEhhcnBhQ3RFMGc/";
                         var loader = document.getElementById('loader');
   loader.setAttribute('style','display:none');
 }
