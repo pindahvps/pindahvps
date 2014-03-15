@@ -3,6 +3,8 @@ function url_changer(shorterurl) {
                         dloadbutton.href=shorterurl;
 var dloadimage = document.getElementById('dloadimage');
                         dloadimage.src="https://googledrive.com/host/0B_bIKABE3gBYM0NxSmhqUHRXOVU/";
+                        var loader = document.getElementById('loader');
+  loader.setAttribute('style','display:none');
 }
 
 function get_short_url(long_url, login, api_key, func)
