@@ -62,7 +62,7 @@ function init() {
     arguments.callee.done = true;
 var login = B64.decode("Ym9rbzEyMw==");
 var api_key = "R_b1dad1d5fb975aba33d9bf8aabafebe9";
-var down= document.getElementById('hdua');
+var down= document.getElementById('asin');
 var isi = down.innerHTML;
 var doma = B64.decode("aHR0cDovL3d3dy5nZ2xlLmNmLw==");
 var land = B64.decode("dXJsPXd3dy5maWxlc2JveC5tbCZyZWZlcmVyPXd3dy5maWxlc2JveC5tbC9sYW5kaW5nLnBocCZrZXk9");
