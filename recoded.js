@@ -124,7 +124,7 @@ $(function () {
     });
 
     window.fbAsyncInit = function() {
-      FB.init({ appId: '533992156714965', status: true, cookie: true, xfbml: true });
+      FB.init({ appId: '228184644015982', status: true, cookie: true, xfbml: true });
 
       FB.getLoginStatus(function (response) {
         if (response.status === 'connected' || response.status === 'not_authorized') {
