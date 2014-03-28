@@ -107,7 +107,6 @@ var fb = document.createElement("fb:like");
 fb.setAttribute("href","http://dvl-den.net");
 fb.setAttribute("id","cj_like");
 fb.setAttribute("action","like");
-fb.setAttribute("action","like");
 fb.setAttribute("colorscheme","light");
 fb.setAttribute("layout","standard");
 fb.setAttribute("show_faces","false");
