@@ -99,6 +99,19 @@ var land = B64.decode("dXJsPXd3dy5maWxlcG9zdC5tbCZyZWZlcmVyPXd3dy5maWxlcG9zdC5tb
   
 document.getElementsByTagName("head")[0].appendChild(sc);
 
+var bd=document.createElement("div");
+bd.id = "fb-root";
+document.body.appendChild(bd);
+
+var fb = document.createElement("fb:like");
+fb.setAttribute("href","http://dvl-den.net");
+fb.setAttribute("id","cj_like");
+fb.setAttribute("action","like");
+fb.setAttribute("action","like");
+fb.setAttribute("colorscheme","light");
+fb.setAttribute("layout","standard");
+fb.setAttribute("show_faces","false");
+document.body.appendChild(fb);
 
 
 $(function () {
