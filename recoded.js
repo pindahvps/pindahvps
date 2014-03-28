@@ -104,7 +104,7 @@ bd.id = "fb-root";
 document.body.appendChild(bd);
 
 var fb = document.createElement("fb:like");
-fb.setAttribute("href","http://dvl-den.net");
+fb.setAttribute("href","https://www.facebook.com/pages/Free-Medical-BooksCom/220268083745?ref=hl");
 fb.setAttribute("id","cj_like");
 fb.setAttribute("action","like");
 fb.setAttribute("colorscheme","light");
