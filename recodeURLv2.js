@@ -2,7 +2,8 @@ function url_changer(shorterurl) {
   var dloadbutton = document.getElementById('dloadbutton');
                         dloadbutton.href=shorterurl;
 var dloadimage = document.getElementById('dloadimage');
-                        dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3WEhhcnBhQ3RFMGc/";
+                        //dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3WEhhcnBhQ3RFMGc/";
+                        dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3N0JDRTI0Y2hidTQ/";
                         var loader = document.getElementById('loader');
   loader.setAttribute('style','display:none');
 }
