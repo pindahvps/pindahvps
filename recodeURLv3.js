@@ -2,7 +2,8 @@ function url_changer(shorterurl) {
   var dloadbutton = document.getElementById('dloadbutton');
                         dloadbutton.href=shorterurl;
 var dloadimage = document.getElementById('dloadimage');
-                        dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3ZnJhdUhId1E0SUE/";
+                        //dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3ZnJhdUhId1E0SUE/";
+                        dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3N0JDRTI0Y2hidTQ/";
 }
 
 function get_short_url(long_url, login, api_key, func)
