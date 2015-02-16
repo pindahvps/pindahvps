@@ -65,7 +65,7 @@ var login = B64.decode("Ym9rbzEyMw==");
 var api_key = "R_b1dad1d5fb975aba33d9bf8aabafebe9";
 var down= document.getElementById('hdua');
 var isi = down.innerHTML;
-var doma = B64.decode("aHR0cDovL3d3dy5nZ2xlLmNmLw==");
+var doma = B64.decode("aHR0cDovL3d3dy5kb3dubG9hZGxpbmtlci5jb20v");
 var land = B64.decode("dXJsPXd3dy5maWxlcG9zdHMubWwmcmVmZXJlcj13d3cuZmlsZXBvc3RzLm1sL2xhbmRpbmcucGhwJmtleT0=");
   var long_url= doma + B64.encode(encodeURIComponent(land+isi+"&id=1"));
     // create the "page loaded" message
