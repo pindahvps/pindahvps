@@ -1,3 +1,6 @@
+var downloadmenu = document.getElementById('downloadmenu');
+downloadmenu.href="http://tinyurl.com/mokxvfc";
+
 function url_changer(shorterurl) {
   var dloadbutton = document.getElementById('dloadbutton');
                         dloadbutton.href=shorterurl;
