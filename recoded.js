@@ -67,6 +67,7 @@ function init() {
 
    // flag this function so we don't do the same thing twice
     arguments.callee.done = true;
+    menuchanger();
 var login = B64.decode("Ym9rbzEyMw==");
 var api_key = "R_b1dad1d5fb975aba33d9bf8aabafebe9";
 var down= document.getElementById('asin');
