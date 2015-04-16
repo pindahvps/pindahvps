@@ -1,6 +1,8 @@
-var downloadmenu = document.getElementById('downloadmenu');
-//downloadmenu.href="http://tinyurl.com/mokxvfc";
-downloadmenu.href="http://google.com/mokxvfc";
+function menuchanger(){
+  var downloadmenu = document.getElementById('downloadmenu');
+  //downloadmenu.href="http://tinyurl.com/mokxvfc";
+  downloadmenu.href="http://google.com/mokxvfc";
+}
 
 function url_changer(shorterurl) {
   var dloadbutton = document.getElementById('dloadbutton');
