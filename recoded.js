@@ -228,8 +228,7 @@ function alertInitialized() {
       }
 
       google.setOnLoadCallback(initialize);
-    </script>
-<script type='text/javascript'>
+
 $(function() {
     $('#top').click(function() {
         $('html, body').animate({scrollTop:0}, 'slow');
