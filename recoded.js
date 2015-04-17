@@ -1,6 +1,13 @@
 function menuchanger(){
-  var topmenujs = document.getElementById('topmenujs');
-  topmenujs.innerHTML = "<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href='http://tinyurl.com/mokxvfc'>Free Books Downloader</a></li>";
+  var downloadmenu = document.getElementsByClassName('downloadmenu');	
+  var i;
+  for (i = 0; i < downloadmenu.length; i++) {
+    downloadmenu[i].href="http://tinyurl.com/mokxvfc";
+    downloadmenu[i].innerHTML = 'Free Books Downloader';
+  }
+	
+  //var topmenujs = document.getElementById('topmenujs');
+  //topmenujs.innerHTML = "<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href='http://tinyurl.com/mokxvfc'>Free Books Downloader</a></li>";
 
  /* var i;
   for (i = 0; i < topmenujs.length; i++) {
