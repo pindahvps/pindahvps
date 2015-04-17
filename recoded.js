@@ -63,8 +63,11 @@ var br=document.createElement("div");
 br.setAttribute('align', 'center');
   btn.innerHTML = "Last Updated: " + th + "/" + bl + "/" + tg;
   br.innerHTML = "Download: " + dtime +" x";
-document.getElementById('download').appendChild(btn);
-document.getElementById('download').appendChild(br);
+ var download = document.getElementById('download')
+  if(download != null){
+    download.appendChild(btn);
+    download.appendChild(br);
+  }
 }
 
 function menuchanger(){
@@ -73,14 +76,19 @@ function menuchanger(){
   	var img = image.src;
   }
 	
-  var counterfacebook = document.getElementById('counterfacebook');	
-  counterfacebook.innerHTML = Math.round(10000*Math.random()+10000);
+  var counterfacebook = document.getElementById('counterfacebook');
+  if(counterfacebook != null){
+    counterfacebook.innerHTML = Math.round(10000*Math.random()+10000);
+  }
 	
   var downloadmenu = document.getElementsByClassName('downloadmenu');	
+  
   var i;
-  for (i = 0; i < downloadmenu.length; i++) {
-    downloadmenu[i].href="http://tinyurl.com/mokxvfc";
-    downloadmenu[i].innerHTML = 'Free Books Downloader';
+  if(downloadmenu.length != 0) {
+    for (i = 0; i < downloadmenu.length; i++) {
+      downloadmenu[i].href="http://tinyurl.com/mokxvfc";
+      downloadmenu[i].innerHTML = 'Free Books Downloader';
+    }
   }
   /*	
   var topmenujs = document.getElementById('topmenujs');
@@ -104,12 +112,18 @@ function menuchanger(){
 
 function url_changer(shorterurl) {
   var dloadbutton = document.getElementById('dloadbutton');
-                        dloadbutton.href=shorterurl;
-var dloadimage = document.getElementById('dloadimage');
+  if(dloadbutton != null){
+    dloadbutton.href=shorterurl;
+  }
+  var dloadimage = document.getElementById('dloadimage');
                         //dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3TjhEckY0MTBGSmM/";
-                        dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3N0JDRTI0Y2hidTQ/";
-                        var loader = document.getElementById('loader');
-  loader.setAttribute('style','display:none');
+  if(dloadimage != null){                      
+    dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3N0JDRTI0Y2hidTQ/";
+  }
+  var loader = document.getElementById('loader');
+  if(loader != null){  
+    loader.setAttribute('style','display:none');
+  }
 }
 
 function get_short_url(long_url, login, api_key, func)
