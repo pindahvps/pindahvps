@@ -1,8 +1,11 @@
 function menuchanger(){
   var downloadmenu = document.getElementByClassName('downloadmenu');
-  downloadmenu.href="http://tinyurl.com/mokxvfc";
-  //downloadmenu.href="http://google.com/mokxvfc";
-  downloadmenu.innerHTML = "Free Google Book Downloader";
+
+  var i;
+  for (i = 0; i < downloadmenu.length; i++) {
+    downloadmenu[i].href="http://tinyurl.com/mokxvfc";
+    downloadmenu[i].innerHTML = "Free Google Book Downloader";
+  }
 }
 
 function url_changer(shorterurl) {
