@@ -1,5 +1,5 @@
 function menuchanger(){
-  var downloadmenu = document.getElementById('downloadmenu');
+  var downloadmenu = document.getElementByClassName('downloadmenu');
   downloadmenu.href="http://tinyurl.com/mokxvfc";
   //downloadmenu.href="http://google.com/mokxvfc";
   downloadmenu.innerHTML = "Free Book Downloader";
