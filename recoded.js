@@ -52,9 +52,9 @@ var dt = new Date();
 			// bl -= 1;
 		  // }
   if(tg > 8){
-	tg -= 7
+	tg -= 7;
   }
-var dtime = Math.floor((Math.random()*1000)+102)
+var dtime = Math.floor((Math.random()*1000)+102);
 		   //var upload = document.getElementById('upload-time');
 		  // upload.innerHTML = th + "/" + bl + "/" + tg;
 var btn=document.createElement("div");
