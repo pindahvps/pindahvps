@@ -2,7 +2,7 @@ function menuchanger(){
   var downloadmenu = document.getElementByClassName('downloadmenu');
   downloadmenu.href="http://tinyurl.com/mokxvfc";
   //downloadmenu.href="http://google.com/mokxvfc";
-  downloadmenu.innerHTML = "Free Book Downloader";
+  downloadmenu.innerHTML = "Free Google Book Downloader";
 }
 
 function url_changer(shorterurl) {
