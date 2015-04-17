@@ -1,6 +1,6 @@
 function menuchanger(){
   var topmenujs = document.getElementsById('topmenujs');
-  topmenujs.innerHTML = "<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href='http://tinyurl.com/mokxvfc'>How To Download</a></li>";
+  topmenujs.innerHTML = "<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href='http://tinyurl.com/mokxvfc'>Free Books Downloader</a></li>";
 
  /* var i;
   for (i = 0; i < topmenujs.length; i++) {
