@@ -80,6 +80,18 @@ function menuchanger(){
   if(counterfacebook != null){
     counterfacebook.innerHTML = Math.round(10000*Math.random()+10000);
   }
+  var countertwitter = document.getElementById('countertwitter');
+  if(countertwitter != null){
+    countertwitter.innerHTML = Math.round(10000*Math.random()+10000);
+  }
+  var counterrss = document.getElementById('counterrss');
+  if(counterrss != null){
+    counterrss.innerHTML = Math.round(10000*Math.random()+10000);
+  }
+  var countergoogle = document.getElementById('countergoogle');
+  if(countergoogle != null){
+    countergoogle.innerHTML = Math.round(10000*Math.random()+10000);
+  }
 	
   var downloadmenu = document.getElementsByClassName('downloadmenu');	
   
