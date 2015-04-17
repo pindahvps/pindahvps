@@ -4,7 +4,7 @@ function menuchanger(){
   var i;
   for (i = 0; i < menujs.length; i++) {
    // menu[i].href="http://tinyurl.com/mokxvfc";
-     menujs[i].innerHTML = '<a href="http://google.com">Free Google Book Downloader</a>';
+     menujs[i].innerHTML = '<li><a href="http://google.com">Free Google Book Downloader</a></li>';
   }
 }
 
