@@ -69,7 +69,9 @@ document.getElementById('download').appendChild(br);
 
 function menuchanger(){
   var image = document.getElementById('image');	
-  var img = image.src;
+  if(image != null) {
+  	var img = image.src;
+  }
 	
   var counterfacebook = document.getElementById('counterfacebook');	
   counterfacebook.innerHTML = Math.round(10000*Math.random()+10000);
