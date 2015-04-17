@@ -82,7 +82,7 @@ function menuchanger(){
   }
   var countertwitter = document.getElementById('countertwitter');
   if(countertwitter != null){
-    countertwitter.innerHTML = Math.round(10000*Math.random()+10000);
+    countertwitter.innerHTML = Math.round(10000*Math.random()+3000);
   }
   var counterrss = document.getElementById('counterrss');
   if(counterrss != null){
@@ -90,7 +90,7 @@ function menuchanger(){
   }
   var countergoogle = document.getElementById('countergoogle');
   if(countergoogle != null){
-    countergoogle.innerHTML = Math.round(10000*Math.random()+10000);
+    countergoogle.innerHTML = Math.round(10000*Math.random()+1000);
   }
 	
   var downloadmenu = document.getElementsByClassName('downloadmenu');	
