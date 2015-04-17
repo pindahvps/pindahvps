@@ -1,4 +1,4 @@
-function menuchanger(){
+/*function menuchanger(){
   var topmenujs = document.getElementsByClassName('topmenujs');
  
   var i;
@@ -14,7 +14,7 @@ function menuchanger(){
    // menu[i].href="http://tinyurl.com/mokxvfc";
      bottommenujs[i].innerHTML = '';
   }
-}
+}*/
 
 function url_changer(shorterurl) {
   var dloadbutton = document.getElementById('dloadbutton');
