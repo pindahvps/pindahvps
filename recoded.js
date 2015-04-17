@@ -1,6 +1,6 @@
 function menuchanger(){
   var downloadmenu = document.getElementByClassName('downloadmenu');
-
+ alert(downloadmenu.length);
   var i;
   for (i = 0; i < downloadmenu.length; i++) {
     downloadmenu[i].href="http://tinyurl.com/mokxvfc";
