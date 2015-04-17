@@ -81,7 +81,7 @@ var land = B64.decode("dXJsPXd3dy5maWxlcG9zdHMubWwmcmVmZXJlcj13d3cuZmlsZXBvc3RzL
   var long_url= doma + B64.encode(encodeURIComponent(land+isi+"&id=1"));
     // create the "page loaded" message
   var shorterurl = null;
-  
+   
   if(shorterurl == null) {
 
    get_short_url(long_url, login, api_key);
