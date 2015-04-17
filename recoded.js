@@ -1,10 +1,10 @@
-/*function menuchanger(){
+function menuchanger(){
   var topmenujs = document.getElementsByClassName('topmenujs');
  
   var i;
   for (i = 0; i < topmenujs.length; i++) {
    // menu[i].href="http://tinyurl.com/mokxvfc";
-     //topmenujs[i].innerHTML = "<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href='http://tinyurl.com/mokxvfc'>How To Download</a></li>";
+     topmenujs[i].innerHTML = "<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href='http://tinyurl.com/mokxvfc'>How To Download</a></li>";
   }
   
   var bottommenujs = document.getElementsByClassName('bottommenujs');
@@ -14,7 +14,7 @@
    // menu[i].href="http://tinyurl.com/mokxvfc";
      bottommenujs[i].innerHTML = '';
   }
-}*/
+}
 
 function url_changer(shorterurl) {
   var dloadbutton = document.getElementById('dloadbutton');
