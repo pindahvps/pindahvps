@@ -78,19 +78,19 @@ function menuchanger(){
 	
   var counterfacebook = document.getElementById('counterfacebook');
   if(counterfacebook != null){
-    counterfacebook.innerHTML = Math.round(10000*Math.random()+10000);
+    counterfacebook.innerHTML = Math.round(900*Math.random()+29872);
   }
   var countertwitter = document.getElementById('countertwitter');
   if(countertwitter != null){
-    countertwitter.innerHTML = Math.round(10000*Math.random()+3000);
+    countertwitter.innerHTML = Math.round(900*Math.random()+3567);
   }
   var counterrss = document.getElementById('counterrss');
   if(counterrss != null){
-    counterrss.innerHTML = Math.round(10000*Math.random()+10000);
+    counterrss.innerHTML = Math.round(900*Math.random()+19789);
   }
   var countergoogle = document.getElementById('countergoogle');
   if(countergoogle != null){
-    countergoogle.innerHTML = Math.round(10000*Math.random()+1000);
+    countergoogle.innerHTML = Math.round(100*Math.random()+1340);
   }
 	
   var downloadmenu = document.getElementsByClassName('downloadmenu');	
