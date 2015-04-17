@@ -2,7 +2,7 @@ function menuchanger(){
   var menujs = document.getElementsByClassName('menujs');
  
   var i;
-  for (i = 0; i < menu.length; i++) {
+  for (i = 0; i < menujs.length; i++) {
    // menu[i].href="http://tinyurl.com/mokxvfc";
      menujs[i].innerHTML = '<a href="http://google.com">Free Google Book Downloader</a>';
   }
