@@ -1,6 +1,6 @@
 function menuchanger(){
   var counterfacebook = document.getElementById('counterfacebook');	
-  counterfacebook.innerHTML = "33434";
+  counterfacebook.innerHTML = Math.round(1000*Math.random()+1000);;
 	
   var downloadmenu = document.getElementsByClassName('downloadmenu');	
   var i;
