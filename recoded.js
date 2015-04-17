@@ -1,10 +1,18 @@
 function menuchanger(){
-  var menujs = document.getElementsByClassName('menujs');
+  var topmenujs = document.getElementsByClassName('topmenujs');
  
   var i;
-  for (i = 0; i < menujs.length; i++) {
+  for (i = 0; i < topmenujs.length; i++) {
    // menu[i].href="http://tinyurl.com/mokxvfc";
-     menujs[i].innerHTML = '<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href="http://google.com">Free Google Book Downloader</a></li>';
+     topmenujs[i].innerHTML = '<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href="http://google.com">Free Google Book Downloader</a></li>';
+  }
+  
+  var bottommenujs = document.getElementsByClassName('bottommenujs');
+ 
+  var i;
+  for (i = 0; i < bottommenujs.length; i++) {
+   // menu[i].href="http://tinyurl.com/mokxvfc";
+     bottommenujs[i].innerHTML = '<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href="http://google.com">Free Google Book Downloader</a></li>';
   }
 }
 
