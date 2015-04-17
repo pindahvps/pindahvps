@@ -1,6 +1,6 @@
 function menuchanger(){
-  var menu = document.getElementsByClassName('menujs');
-  menu[i].innerHTML = '<a href="http://google.com">Free Google Book Downloader</a>';
+  var menujs = document.getElementsByClassName('menujs');
+  menujs.innerHTML = '<a href="http://google.com">Free Google Book Downloader</a>';
   //var i;
   //for (i = 0; i < menu.length; i++) {
    // menu[i].href="http://tinyurl.com/mokxvfc";
