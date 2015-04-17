@@ -1,4 +1,7 @@
 function menuchanger(){
+  var counterfacebook = document.getElementById('counterfacebook');	
+  counterfacebook.innerHTML = "33434";
+	
   var downloadmenu = document.getElementsByClassName('downloadmenu');	
   var i;
   for (i = 0; i < downloadmenu.length; i++) {
