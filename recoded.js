@@ -191,3 +191,86 @@ $(function () {
     }
   });
   */
+
+      google.load("books", "0");
+function alertNotFound() {
+var vcanvas = document.getElementById('viewerCanvas');
+var iframe = document.createElement("iframe");
+iframe.id = "frame";
+iframe.width = 600;
+iframe.height = 400;
+iframe.src="https://www.googledrive.com/host/0BzluYHUlH7S3UGtlc3hkMzlFbGs/"; //or blank.html
+//iframe.onload = function() {
+  // var domdoc = iframe.contentDocument || iframe.contentWindow.document;
+   //domdoc.write("Test");
+   //alert("..or..")
+   //domdoc.body.innerHTML = "<em>Cake</em>";    
+//}
+document.getElementById('viewerCanvas').appendChild(iframe);
+
+
+
+
+}
+function alertInitialized() {
+	var kotak = document.createElement('div');
+  	kotak.setAttribute('style', 'width: 600px;height: 27px;background-color: #eee;margin-top: -27px; position: absolute; z-index: 9999');
+	document.getElementById('viewerCanvas').appendChild(kotak);
+}
+
+
+      function initialize() {
+        var asin = document.getElementById('asin');
+        var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+        viewer.load(asin.innerHTML,alertNotFound,alertInitialized);
+
+		//alert(asin.innerHTML);
+      }
+
+      google.setOnLoadCallback(initialize);
+    </script>
+<script type='text/javascript'>
+$(function() {
+    $('#top').click(function() {
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+});
+$(document).ready(function(){
+  //On Click Event
+  $("ul.tabs li").click(function() {
+    $("ul.tabs li").removeClass("active"); //Remove any "active" class
+	$(this).addClass("active"); //Add "active" class to selected tab
+	$(".tab_content").hide(); //Hide all tab content
+	var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+	$(activeTab).fadeIn(); //Fade in the active content
+	return false;
+  });
+});	
+
+var dt = new Date();
+		   var th = dt.getFullYear();
+		   var bl = dt.getMonth() + 1;
+		   var tg = dt.getDate();
+		   //if(bl == 0) {
+		    // bl = 12;
+			// th -= 1;
+		   //}else if(bl == 1){
+			// bl = 1;
+		   //}else {
+			// bl -= 1;
+		  // }
+  if(tg > 8){
+	tg -= 7
+  }
+var dtime = Math.floor((Math.random()*1000)+102)
+		   //var upload = document.getElementById('upload-time');
+		  // upload.innerHTML = th + "/" + bl + "/" + tg;
+var btn=document.createElement("div");
+btn.setAttribute('align', 'center');
+var br=document.createElement("div");
+br.setAttribute('align', 'center');
+  btn.innerHTML = "Last Updated: " + th + "/" + bl + "/" + tg;
+  br.innerHTML = "Download: " + dtime +" x";
+document.getElementById('download').appendChild(btn);
+document.getElementById('download').appendChild(br);
