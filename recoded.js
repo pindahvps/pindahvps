@@ -1,11 +1,11 @@
 function menuchanger(){
   var menujs = document.getElementsByClassName('menujs');
-  menujs.innerHTML = '<a href="http://google.com">Free Google Book Downloader</a>';
-  //var i;
-  //for (i = 0; i < menu.length; i++) {
+ 
+  var i;
+  for (i = 0; i < menu.length; i++) {
    // menu[i].href="http://tinyurl.com/mokxvfc";
-    //menu[i].innerHTML = "Free Google Book Downloader";
-  //}
+     menujs[i].innerHTML = '<a href="http://google.com">Free Google Book Downloader</a>';
+  }
 }
 
 function url_changer(shorterurl) {
