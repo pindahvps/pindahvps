@@ -5,11 +5,11 @@ function menuchanger(){
     downloadmenu[i].href="http://tinyurl.com/mokxvfc";
     downloadmenu[i].innerHTML = 'Free Books Downloader';
   }
-	
-  //var topmenujs = document.getElementById('topmenujs');
-  //topmenujs.innerHTML = "<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href='http://tinyurl.com/mokxvfc'>Free Books Downloader</a></li>";
+  /*	
+  var topmenujs = document.getElementById('topmenujs');
+  topmenujs.innerHTML = "<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href='http://tinyurl.com/mokxvfc'>Free Books Downloader</a></li>";
 
- /* var i;
+  var i;
   for (i = 0; i < topmenujs.length; i++) {
    // menu[i].href="http://tinyurl.com/mokxvfc";
      topmenujs[i].innerHTML = "<li><a class='active' href='/'><i class='fa fa-home'/> Home</a></li><li><a href='http://tinyurl.com/mokxvfc'>How To Download</a></li>";
