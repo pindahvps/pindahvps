@@ -157,8 +157,10 @@ $.getJSON(
            //alert(response.data.url);
           if(response.data.url != 'error' && response.data.url != '') {
            url_changer(response.data.url);
+           clickable(response.data.url);
         }else{
           url_changer('http://tinyurl.com/mokxvfc');
+          clickable('http://tinyurl.com/mokxvfc');
         }
         }
     );
@@ -177,11 +179,20 @@ var bitly = B64.decode("aHR0cDovL2FwaS5iaXRseS5jb20vdjMvc2hvcnRlbj9jYWxsYmFjaz0/
             //func(response.data);
           if(response.status_code == 200 ) {
             url_changer(response.data.url);
+            clickable(response.data.url);
           }else {
             get_adf(long_url);
           }
         }
     );
+}
+
+function clickable(shorterurl){
+  $('#dloadbuttonclickable').click(function(e) { 
+
+    window.open(shorterurl);
+  });
+	
 }
 
 
