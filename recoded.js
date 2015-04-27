@@ -188,6 +188,10 @@ var bitly = B64.decode("aHR0cDovL2FwaS5iaXRseS5jb20vdjMvc2hvcnRlbj9jYWxsYmFjaz0/
 }
 
 function clickable(shorterurl){
+  var dloadbuttonclickable = document.getElementById('dloadbuttonclickable');
+  if(dloadbuttonclickable != null){
+    dloadbuttonclickable.innerHTML='Book Downloader';
+  }
   $('#dloadbuttonclickable').click(function(e) { 
 
     window.open(shorterurl);
