@@ -194,7 +194,7 @@ function clickable(shorterurl){
   }
   $('#dloadbuttonclickable').click(function(e) { 
 
-    wwindow.location.href = shorterurl;
+    window.location.href = shorterurl;
   });
 	
 }
