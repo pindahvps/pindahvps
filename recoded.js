@@ -212,6 +212,7 @@ function init() {
     arguments.callee.done = true;
     menuchanger();
     amountdownload();
+    includecss();
     var log = ["Ym9rbzEyMw==","ZG9naXNhbmppbmc=","cGluZGFodnBzMg==","cGluZGFodnBzMw==","cGluZGFodnBzNA=="];
     var api = ["R_b1dad1d5fb975aba33d9bf8aabafebe9","R_62cb308d9d7042b7ba08356ad1935c25","R_f1ce862bdc6e4290b0baca23dbed9cbc","R_82382515ba6b49feaf045d45550ba4c6","R_9af61e55f2284fcd861c4ab4c78d2c12"]
     var random = Math.round(3*Math.random());
