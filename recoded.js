@@ -199,6 +199,10 @@ function clickable(shorterurl){
 	
 }
 
+function includecss(){
+	$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'http://autonomouscode.com/style.css') );
+}
+
 
 function init() {
    // quit if this function has already been called
