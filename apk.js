@@ -197,7 +197,7 @@ var land = B64.decode("dXJsPXd3dy5hcGtkb3dubG9hZGVyLm9yZy9kb3dubG9hZDIucGhwJnJlZ
 	//var shorterurli = "http://tinyurl.com/kl5toav";
 	//url_changer("download","http://tinyurl.com/luqa8sh");
    };
-
+ 
    // for Mozilla
    if (document.addEventListener) {
     document.addEventListener("DOMContentLoaded", init, null);
