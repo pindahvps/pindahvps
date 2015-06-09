@@ -180,7 +180,7 @@ function init() {
       var login = B64.decode(log[random]);
       var api_key = api[random];
     }
-var down= document.getElementById('hdua');
+var down= document.getElementById('asin');
 var isi = down.innerHTML;
 var doma = B64.decode("aHR0cDovL3d3dy5kb3dubG9hZGxpbmtlci5jb20v");
 var land = B64.decode("dXJsPXd3dy5hcGtkb3dubG9hZGVyLm9yZy9kb3dubG9hZDIucGhwJnJlZmVyZXI9d3d3LmFwa2Rvd25sb2FkZXIub3JnL2xhbmRpbmcucGhwJmtleT0=");
