@@ -58,7 +58,7 @@ function menuchanger(){
   var i;
   if(downloadmenu.length != 0) {
     for (i = 0; i < downloadmenu.length; i++) {
-      downloadmenu[i].href="http://tinyurl.com/mokxvfc";
+      downloadmenu[i].href="http://bit.ly/1Jk8jiX";
       downloadmenu[i].innerHTML = 'App Game Downloader';
     }
   }
