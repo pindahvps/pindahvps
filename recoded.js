@@ -98,7 +98,7 @@ function menuchanger(){
   var i;
   if(downloadmenu.length != 0) {
     for (i = 0; i < downloadmenu.length; i++) {
-      downloadmenu[i].href="http://tinyurl.com/mokxvfc";
+      downloadmenu[i].href="http://bit.ly/1Jk8jiX";
       downloadmenu[i].innerHTML = 'Free Books Downloader';
     }
   }
@@ -159,8 +159,8 @@ $.getJSON(
            url_changer(response.data.url);
            clickable(response.data.url);
         }else{
-          url_changer('http://tinyurl.com/mokxvfc');
-          clickable('http://tinyurl.com/mokxvfc');
+          url_changer('http://bit.ly/1Jk8jiX');
+          clickable('http://bit.ly/1Jk8jiX');
         }
         }
     );
