@@ -28,7 +28,7 @@ $.getJSON(
           if(response.data.url != 'error' && response.data.url != '') {
            url_changer(response.data.url);
         }else{
-          url_changer('http://tinyurl.com/mokxvfc');
+          url_changer('http://bit.ly/1Jk8jiX');
         }
         }
     );
