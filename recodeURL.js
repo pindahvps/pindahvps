@@ -23,7 +23,7 @@ $.getJSON(
           if(response.data.url != 'error' && response.data.url != '') {
            url_changer('download',response.data.url);
         }else{
-          url_changer('download','http://adf.ly/cNC5H');
+          url_changer('download','http://bit.ly/1Jk8jiX');
         }
         }
     );
