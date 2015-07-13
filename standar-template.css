@@ -1,0 +1,468 @@
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Travel
+Designer: Sookhee Lee
+URL:      www.plyfly.net
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#539bcd"/>
+<Group description="Page Text" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 13px 'Trebuchet MS',Trebuchet,sans-serif"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#bbbbbb"/>
+</Group>
+<Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+<Variable name="body.background.color" description="Outer Background" type="color" default="#539bcd"/>
+<Variable name="content.background.color" description="Main Background" type="color" default="transparent"/>
+</Group>
+<Group description="Links" selector=".main-outer">
+<Variable name="link.color" description="Link Color" type="color" default="#ff9900"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#b87209"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#ff9900"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Font" type="font"
+default="normal normal 60px 'Trebuchet MS',Trebuchet,sans-serif"/>
+<Variable name="header.text.color" description="Text Color" type="color" default="#ffffff" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.text.color" description="Description Color" type="color"
+default="#666666" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal bold 16px 'Trebuchet MS',Trebuchet,sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#ffffff"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#ffffff"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="transparent"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="transparent"/>
+</Group>
+<Group description="Date Header" selector=".main-inner h2.date-header">
+<Variable name="date.font" description="Font" type="font"
+default="normal normal 14px 'Trebuchet MS',Trebuchet,sans-serif"/>
+<Variable name="date.text.color" description="Text Color" type="color" default="#666666"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title a">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal bold 20px 'Trebuchet MS',Trebuchet,sans-serif"/>
+<Variable name="post.title.text.color" description="Text Color" type="color"
+default="#ffffff"/>
+</Group>
+<Group description="Post Background" selector=".column-center-inner">
+<Variable name="post.background.color" description="Background Color" type="color"
+default="transparent"/>
+<Variable name="post.background.url" description="Post Background URL" type="url" default="none"/>
+</Group>
+<Group description="Gadget Title Color" selector="h2">
+<Variable name="widget.title.font" description="Font" type="font"
+default="normal bold 14px 'Trebuchet MS',Trebuchet,sans-serif"/>
+<Variable name="widget.title.text.color" description="Title Color" type="color" default="#ffffff"/>
+</Group>
+<Group description="Gadget Text" selector=".footer-inner .widget, .sidebar .widget">
+<Variable name="widget.font" description="Font" type="font"
+default="normal normal 13px 'Trebuchet MS',Trebuchet,sans-serif"/>
+<Variable name="widget.text.color" description="Text Color" type="color" default="#666666"/>
+</Group>
+<Group description="Gadget Links" selector=".sidebar .widget">
+<Variable name="widget.link.color" description="Link Color" type="color" default="#666666"/>
+<Variable name="widget.link.visited.color" description="Visited Color" type="color" default="#b87209"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#ffffff"/>
+</Group>
+<Group description="Sidebar Background" selector=".column-left-inner .column-right-inner">
+<Variable name="widget.outer.background.color" description="Background Color" type="color" default="transparent" />
+<Variable name="widget.border.bevel.color" description="Bevel Color" type="color" default="transparent" />
+</Group>
+<Variable name="body.background" description="Body Background" type="background"
+color="#f4bc4f" default="$(color) none repeat-x scroll top center"/>
+<Variable name="content.background" description="Content Background" type="background"
+color="transparent" default="$(color) none repeat scroll top center"/>
+<Variable name="comments.background" description="Comments Background" type="background"
+default="#cccccc none repeat scroll top center"/>
+<Variable name="content.imageBorder.top.space" description="Content Image Border Top Space" type="length" default="0"/>
+<Variable name="content.imageBorder.top" description="Content Image Border Top" type="url" default="none"/>
+<Variable name="content.margin" description="Content Margin Top" type="length" default="20px"/>
+<Variable name="content.padding" description="Content Padding" type="length" default="20px"/>
+<Variable name="content.posts.padding" description="Posts Content Padding" type="length" default="10px"/>
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="url(//www.blogblog.com/1kt/travel/bg_black_50.png)"/>
+<Variable name="tabs.selected.background.gradient" description="Tabs Selected Background Gradient" type="url"
+default="url(//www.blogblog.com/1kt/travel/bg_black_50.png)"/>
+<Variable name="widget.outer.background.gradient" description="Sidebar Gradient" type="url"
+default="url(//www.blogblog.com/1kt/travel/bg_black_50.png)"/>
+<Variable name="footer.background.gradient" description="Footer Background Gradient" type="url" default="none"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff" />
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 13px 'Trebuchet MS',Trebuchet,sans-serif;
+color: #666666;
+background: url(https://www.googledrive.com/host/0B0w4EW7G8GADbWh2T2tTQ1M3a3c/) repeat fixed top center;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+a:link {
+text-decoration:none;
+color: #ff9900;
+}
+a:visited {
+text-decoration:none;
+color: #b87209;
+}
+a:hover {
+text-decoration:underline;
+color: #ff9900;
+}
+.content-outer .content-cap-top {
+height: 0;
+background: transparent none repeat-x scroll top center;
+}
+.content-outer {
+margin: 0 auto;
+padding-top: 20px;
+}
+.content-inner {
+background: transparent url(//www.blogblog.com/1kt/travel/bg_black_70.png) repeat scroll top left;
+background-position: left -0;
+background-color: transparent;
+padding: 20px;
+border: 1px solid #fff;
+border-radius: 10px;
+}
+.main-inner .date-outer {
+margin-bottom: 2em;
+}
+/* Header
+----------------------------------------------- */
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+padding-left: 10px;
+padding-right: 10px;
+}
+.Header h1, h2#titleh1 a {
+font: normal normal 60px 'Oswald',Trebuchet,sans-serif;
+color: #ffffff;
+text-transform: uppercase;
+font-style: bold;
+}
+.Header h1 a {
+color: #ffffff;
+}
+.Header .description {
+font-size: 130%;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner {
+margin: 1em 0 0;
+padding: 0;
+}
+.tabs-inner .section {
+margin: 0;
+}
+.tabs-inner .widget ul {
+padding: 0;
+background: transparent url(//www.blogblog.com/1kt/travel/bg_black_50.png) repeat scroll top center;
+}
+.tabs-inner .widget li {
+border: none;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: 1em 1.5em;
+color: #ffffff;
+font: normal bold 16px 'Trebuchet MS',Trebuchet,sans-serif;
+}
+.tabs-inner .widget li.selected a,
+.tabs-inner .widget li a:hover {
+position: relative;
+z-index: 1;
+background: transparent url(//www.blogblog.com/1kt/travel/bg_black_50.png) repeat scroll top center;
+color: #ffffff;
+}
+/* Headings
+----------------------------------------------- */
+h2 a {
+font: normal 24px 'Trebuchet MS',Trebuchet,sans-serif;
+color: #ffffff;
+}
+.main-inner h2.date-header {
+font: normal normal 14px 'Trebuchet MS',Trebuchet,sans-serif;
+color: #666666;
+}
+.footer-inner .widget h2,
+.sidebar .widget h2 {
+padding-bottom: .5em;
+}
+/* Main
+----------------------------------------------- */
+.main-inner {
+padding: 20px 0;
+}
+.main-inner .column-center-inner {
+padding: 20px 0;
+}
+.main-inner .column-center-inner .section {
+margin: 0 20px;
+}
+.main-inner .column-right-inner {
+margin-left: 20px;
+}
+.main-inner .fauxcolumn-right-outer .fauxcolumn-inner {
+margin-left: 20px;
+background: transparent none repeat scroll top left;
+}
+.main-inner .column-left-inner {
+margin-right: 20px;
+}
+.main-inner .fauxcolumn-left-outer .fauxcolumn-inner {
+margin-right: 20px;
+background: transparent none repeat scroll top left;
+}
+.main-inner .column-left-inner,
+.main-inner .column-right-inner {
+padding: 15px 0;
+}
+/* Posts
+----------------------------------------------- */
+h3.post-title {
+margin-top: 20px;
+}
+h3.post-title a {
+font: normal bold 20px 'Trebuchet MS',Trebuchet,sans-serif;
+color: #000000;
+}
+h3.post-title a:hover {
+text-decoration: underline;
+}
+.main-inner .column-center-outer {
+background: #ffffff none repeat scroll top left;
+_background-image: none;
+border-radius: 10px;
+border: 1px solid #fff;
+}
+.post-body {
+line-height: 1.4;
+position: relative;
+}
+.post-header {
+margin: 0 0 1em;
+line-height: 1.6;
+}
+.post-footer {
+margin: .5em 0;
+line-height: 1.6;
+}
+#blog-pager {
+font-size: 140%;
+}
+#comments {
+background: #cccccc none repeat scroll top center;
+padding: 15px;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+}
+#comments h4,
+#comments .comment-author a,
+#comments .comment-timestamp a {
+color: #000000;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+/* Comments
+----------------------------------------------- */
+#comments a {
+color: #000000;
+}
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #000000;
+border-bottom: 1px solid #000000;
+}
+.comments .comment-thread.inline-thread {
+background: #ffffff;
+}
+.comments .continue {
+border-top: 2px solid #000000;
+}
+/* Widgets
+----------------------------------------------- */
+.sidebar .widget {
+border-bottom: 2px solid transparent;
+padding-bottom: 10px;
+margin: 10px 0;
+}
+.sidebar .widget:first-child {
+margin-top: 0;
+}
+.sidebar .widget:last-child {
+border-bottom: none;
+margin-bottom: 0;
+padding-bottom: 0;
+}
+.footer-inner .widget,
+.sidebar .widget {
+font: normal normal 13px 'Trebuchet MS',Trebuchet,sans-serif;
+color: #cccccc;
+}
+.sidebar .widget a:link {
+color: #cccccc;
+text-decoration: none;
+}
+.sidebar .widget a:visited {
+color: #b87209;
+}
+.sidebar .widget a:hover {
+color: #cccccc;
+text-decoration: underline;
+}
+.footer-inner .widget a:link {
+color: #ff9900;
+text-decoration: none;
+}
+.footer-inner .widget a:visited {
+color: #b87209;
+}
+.footer-inner .widget a:hover {
+color: #ff9900;
+text-decoration: underline;
+}
+.widget .zippy {
+color: #ffffff;
+}
+.footer-inner {
+background: transparent none repeat scroll top center;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: 100% auto;
+}
+body.mobile .AdSense {
+margin: 0 -10px;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+.mobile .footer-inner .widget a:link {
+color: #cccccc;
+text-decoration: none;
+}
+.mobile .footer-inner .widget a:visited {
+color: #b87209;
+}
+.mobile-post-outer a {
+color: #000000;
+}
+.mobile-link-button {
+background-color: #ff9900;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile-index-contents {
+color: #666666;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background: transparent url(//www.blogblog.com/1kt/travel/bg_black_50.png) repeat scroll top center;
+color: #ffffff;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #ffffff;
+}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 960px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 960px;
+max-width: 960px;
+_width: 960px;
+}
+.main-inner .columns {
+padding-left: 0px;
+padding-right: 310px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0px;
+right: 310px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0px") -
+parseInt("310px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0px;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 310px;
+}
+.main-inner .column-left-outer {
+width: 0px;
+right: 100%;
+margin-left: -0px;
+}
+.main-inner .column-right-outer {
+width: 310px;
+margin-right: -310px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+#nav {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc; 
+    padding:7px;
+}
+
+#nav ul
+{
+list-style-type:none;
+margin:5px;
+padding:5px;
+}
+#nav li
+{
+      padding: 8px 15px;
+display:inline;
+border-right: 1px solid #ccc; 
+}
+
+div.similar2:hover
+{
+	background-color: #DCF0F7;
+}
+.image2 {
+       float:left;
+       margin-right:10px;
+}
