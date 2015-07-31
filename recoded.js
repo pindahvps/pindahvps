@@ -6,7 +6,7 @@ function reloadScript(){
 }
 
 function changeBackground(){
-  var random = Math.round(5*Math.random());
+  var random = Math.round(13*Math.random());
   var image = ["https://googledrive.com/host/0BzluYHUlH7S3Y1B1S1NKZnBwZVE/","https://googledrive.com/host/0BzluYHUlH7S3c3FsRXpPb0MwWjA/","https://googledrive.com/host/0BzluYHUlH7S3a2t3ck5uVFp3b3M/","https://googledrive.com/host/0BzluYHUlH7S3akh0dEM2V1hzZ00/","https://googledrive.com/host/0BzluYHUlH7S3bHk4b3ZPYWsxVUU/","https://googledrive.com/host/0BzluYHUlH7S3Tkw1cUo5YWRvV0U/","https://googledrive.com/host/0BzluYHUlH7S3VnkwS2kxVFRIQzQ/","https://googledrive.com/host/0BzluYHUlH7S3M2c0ZkVyVnBtLTg/","https://googledrive.com/host/0BzluYHUlH7S3US1laWhpQUwyZ28/","https://googledrive.com/host/0BzluYHUlH7S3VVhscHk0WC01UjA/","https://googledrive.com/host/0BzluYHUlH7S3TG92b3hPdjVpbDg/","https://googledrive.com/host/0BzluYHUlH7S3VmZtaUQtNUJYY0U/","https://googledrive.com/host/0BzluYHUlH7S3eHBqamdCTm51VG8/","https://googledrive.com/host/0BzluYHUlH7S3c29oMmo5WmM4UHc/"]
   $("body").css("background-image","url()"); //edit, body must be in quotes!
 }
@@ -184,6 +184,7 @@ function init() {
    // flag this function so we don't do the same thing twice
     arguments.callee.done = true;
     menuchanger();
+    changeBackground();
     amountdownload();
     includecss();
     reloadScript();
