@@ -88,6 +88,12 @@ function url_changer(shorterurl) {
     dloadbutton.href=shorterurl;
   }
 	
+var img = document.createElement("img");
+img.src = "https://i.ibb.co/wR7H0K6/download.gif";
+
+var src = document.getElementById("download");
+src.appendChild(img);
+	
  var download = document.getElementById('download');
   if(download != null){
     download.href=shorterurl;
