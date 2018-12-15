@@ -97,7 +97,17 @@ function url_changer(shorterurl) {
     loader.setAttribute('style','display:none');
   }
 }
+function clickable(shorterurl){
+  var dloadbuttonclickable = document.getElementById('dloadbuttonclickable');
+  if(dloadbuttonclickable != null){
+    dloadbuttonclickable.innerHTML='App Game Downloader';
+  }
+  $('#dloadbuttonclickable').click(function(e) { 
 
+    window.location.href = shorterurl;
+  });
+	
+}
 function get_short_url(long_url, login, api_key, func)
 {
 
@@ -147,17 +157,7 @@ var bitly = B64.decode("aHR0cDovL2FwaS5iaXRseS5jb20vdjMvc2hvcnRlbj9jYWxsYmFjaz0/
     );
 }
 
-function clickable(shorterurl){
-  var dloadbuttonclickable = document.getElementById('dloadbuttonclickable');
-  if(dloadbuttonclickable != null){
-    dloadbuttonclickable.innerHTML='App Game Downloader';
-  }
-  $('#dloadbuttonclickable').click(function(e) { 
 
-    window.location.href = shorterurl;
-  });
-	
-}
 
 function includecss(){
 	$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'http://csslinker.com/style.css') );
