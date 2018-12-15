@@ -119,7 +119,7 @@ function url_changer(shorterurl) {
   var dloadimage = document.getElementById('dloadimage');
                         //dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3TjhEckY0MTBGSmM/";
   if(dloadimage != null){                      
-    dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3N0JDRTI0Y2hidTQ/";
+    dloadimage.src="https://i.ibb.co/wR7H0K6/download.gif";
   }
   var loader = document.getElementById('loader');
   if(loader != null){  
