@@ -87,6 +87,12 @@ function url_changer(shorterurl) {
   if(dloadbutton != null){
     dloadbutton.href=shorterurl;
   }
+	
+ var download = document.getElementById('download');
+  if(download != null){
+    download.href=shorterurl;
+  }
+	
   var dloadimage = document.getElementById('dloadimage');
                         //dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3TjhEckY0MTBGSmM/";
   if(dloadimage != null){                      
