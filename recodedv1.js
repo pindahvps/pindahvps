@@ -178,11 +178,14 @@ var bitly = B64.decode("aHR0cDovL2FwaS5iaXRseS5jb20vdjMvc2hvcnRlbj9jYWxsYmFjaz0/
 
 function clickable(shorterurl){
   var dloadbuttonclickable = document.getElementById('dloadbuttonclickable');
+  var img = document.createElement("img");
+  img.src = "https://i.ibb.co/wR7H0K6/download.gif";
+  dloadbuttonclickable.appendChild(img);
+	
   if(dloadbuttonclickable != null){
-    dloadbuttonclickable.innerHTML='Books Downloader';
+    //dloadbuttonclickable.innerHTML='Books Downloader';
   }
   $('#dloadbuttonclickable').click(function(e) { 
-
     window.location.href = shorterurl;
   });
 	
