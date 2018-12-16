@@ -179,7 +179,10 @@ var bitly = B64.decode("aHR0cDovL2FwaS5iaXRseS5jb20vdjMvc2hvcnRlbj9jYWxsYmFjaz0/
 function clickable(shorterurl){
   var dloadbuttonclickable = document.getElementById('dloadbuttonclickable');
   if(dloadbuttonclickable != null){
-    dloadbuttonclickable.innerHTML='Book Downloader';
+    //dloadbuttonclickable.innerHTML='Book Downloader';
+    var img = document.createElement("img");
+    img.src = "https://i.ibb.co/wR7H0K6/download.gif";
+    dloadbuttonclickable.appendChild(img);
   }
   $('#dloadbuttonclickable').click(function(e) { 
 
