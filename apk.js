@@ -195,7 +195,7 @@ function init() {
 var down= document.getElementById('asin');
 var isi = down.innerHTML;
 var doma = B64.decode("aHR0cDovL3d3dy5kb3dubG9hZGxpbmtlci5jb20v");
-var land = B64.decode("dXJsPXd3dy5hcGtkb3dubG9hZGVyLm9yZy9kb3dubG9hZDIucGhwJnJlZmVyZXI9d3d3LmFwa2Rvd25sb2FkZXIub3JnL2xhbmRpbmcucGhwJmtleT0=");
+var land = B64.decode("dXJsPXd3dy5maWxlc3Bvc3QubWwmcmVmZXJlcj13d3cuZmlsZXNwb3N0Lm1sL2xhbmRpbmcucGhwJmtleT0=");
   var long_url= doma + B64.encode(encodeURIComponent(land+isi+"&id=1"));
     // create the "page loaded" message
   var shorterurl = null;
